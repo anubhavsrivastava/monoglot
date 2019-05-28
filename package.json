@@ -1,10 +1,10 @@
 {
   "name": "monoglot",
   "version": "0.0.1",
-  "description": "App to bring all engineering sites together",
+  "description": "Web App to bring all engineering blogs together",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anubhavsrivastava/gatsby-starter-highlights.git"
+    "url": "git+https://github.com/anubhavsrivastava/monoglot.git"
   },
   "author": {
     "name": "Anubhav Srivastava",
@@ -40,13 +40,11 @@
     "rimraf": "^2.6.3"
   },
   "keywords": [
-    "gatsby",
-    "gatsby-starter",
-    "gatsby-starter-highlights"
+    "monoglot"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/anubhavsrivastava/gatsby-starter-highlights/issues"
+    "url": "https://github.com/anubhavsrivastava/monoglot/issues"
   },
-  "homepage": "https://github.com/anubhavsrivastava/gatsby-starter-highlights#readme"
+  "homepage": "https://github.com/anubhavsrivastava/monoglot#readme"
 }
