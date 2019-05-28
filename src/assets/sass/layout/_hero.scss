@@ -1,0 +1,126 @@
+.hero {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.hero-paragraph {
+  margin-bottom: 32px;
+}
+
+.hero-browser {
+  position: relative;
+  margin-top: 80px;
+}
+
+.hero-browser-inner {
+  position: relative; /* To display bubbles below the browser */
+
+  img {
+    width: 100%;
+    height: auto;
+    @include shadow;
+    overflow: visible;
+  }
+}
+
+.bubble-1,
+.bubble-2,
+.bubble-3,
+.bubble-4 {
+  position: absolute;
+
+  img {
+    height: auto;
+  }
+}
+
+.bubble-1 {
+  top: -15px;
+  left: 70px;
+
+  img {
+    width: 34px;
+  }
+}
+
+.bubble-2 {
+  bottom: 0;
+  right: -30px;
+
+  img {
+    width: 78px;
+  }
+}
+
+.bubble-3 {
+  left: -40px;
+  bottom: -40px;
+
+  img {
+    width: 143px;
+  }
+}
+
+.bubble-4 {
+  top: -25px;
+  right: -54px;
+
+  img {
+    width: 104px;
+  }
+}
+
+@include media('>medium') {
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 120px;
+  }
+
+  .hero-paragraph {
+    margin-bottom: 40px;
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+
+  .bubble-1,
+  .bubble-2,
+  .bubble-3,
+  .bubble-4 {
+    img {
+      width: auto;
+    }
+  }
+
+  .bubble-1 {
+    top: 85px;
+    left: -30px;
+    img {
+      width: 52px;
+    }
+  }
+
+  .bubble-2 {
+    bottom: -8px;
+    right: -75px;
+    img {
+      width: 126px;
+    }
+  }
+
+  .bubble-3 {
+    left: -140px;
+    bottom: -120px;
+    img {
+      width: 286px;
+    }
+  }
+
+  .bubble-4 {
+    top: -35px;
+    right: -110px;
+    img {
+      width: 235px;
+    }
+  }
+}
