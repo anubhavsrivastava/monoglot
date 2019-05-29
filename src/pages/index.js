@@ -24,13 +24,13 @@ const IndexPage = () => (
           <div className="container-sm">
             <div className="hero-inner">
               <h1 className="hero-title h2-mobile mt-0 is-revealing">
-                Landing template
+                Monoglot
               </h1>
               <p className="hero-paragraph is-revealing">
-                Our landing page template works for all the devices, so you only
-                have to setup it once, and get beautiful results forever.
+                Speaking only one language - Engineering
               </p>
-              <div className="hero-form newsletter-form field field-grouped is-revealing">
+
+              {/* <div className="hero-form newsletter-form field field-grouped is-revealing">
                 <div className="control control-expanded">
                   <input
                     className="input"
@@ -48,6 +48,7 @@ const IndexPage = () => (
                   </a>
                 </div>
               </div>
+               */}
               <div className="hero-browser">
                 <div className="bubble-3 is-revealing">
                   <img src={strip1} alt="" />
