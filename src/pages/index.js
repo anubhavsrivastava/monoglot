@@ -23,13 +23,20 @@ const IndexPage = () => (
         <section className="hero text-center">
           <div className="container-sm">
             <div className="hero-inner">
-              <h1 className="hero-title h2-mobile mt-0 is-revealing">
+              {/* <h1 className="hero-title h2-mobile mt-0 is-revealing">
                 Monoglot
               </h1>
               <p className="hero-paragraph is-revealing">
                 Speaking only one language - Engineering
-              </p>
-
+              </p> */}
+              <div className="search-box ">
+                <div className="search-container">
+                  <span className="search-icon">
+                    <i className="fa fa-search" />
+                  </span>
+                  <input type="search" id="search" placeholder="Search" />
+                </div>
+              </div>
               {/* <div className="hero-form newsletter-form field field-grouped is-revealing">
                 <div className="control control-expanded">
                   <input
@@ -57,7 +64,8 @@ const IndexPage = () => (
                   <img src={strip2} alt="" />
                 </div>
                 <div className="hero-browser-inner is-revealing">
-                  <img src={window} alt="" />
+                  <div className="content">sdf</div>
+                  {/* <img src={window} alt="" /> */}
                 </div>
                 <div className="bubble-1 is-revealing">
                   <img src={strip3} alt="" />
