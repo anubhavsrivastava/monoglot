@@ -13,6 +13,13 @@ export class Revealer extends Component {
         interval: 150,
       }
     );
+    sr.reveal('.content-list', {
+      duration: 100,
+      distance: '40px',
+      easing: 'cubic-bezier(0.5, -0.01, 0, 1.00)',
+      origin: 'bottom',
+      interval: 10,
+    });
 
     sr.reveal(
       '.bubble-3, .bubble-4, .hero-browser-inner, .bubble-1, .bubble-2',
@@ -24,7 +31,7 @@ export class Revealer extends Component {
       }
     );
 
-    sr.reveal('.feature', {
+    sr.reveal('.feature ', {
       duration: 600,
       distance: '40px',
       easing: 'cubic-bezier(0.5, -0.01, 0, 1.005)',

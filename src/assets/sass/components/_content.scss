@@ -1,0 +1,76 @@
+ul.feed {
+  list-style: none;
+}
+.list {
+  margin-top: 30px;
+}
+ul.feed li {
+  cursor: pointer;
+  padding: 10px;
+  width: 350px;
+  //   float: left;
+  display: inline-block;
+  box-shadow: 0 1px 5px #e3e7eb;
+  margin: 5px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #212529;
+  background: #f8f9fb;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+ul.feed li.active:hover,
+ul.feed li.active {
+  color: #fff !important;
+  background: #756af8;
+  box-shadow: 0 8px 16px rgba(94, 82, 246, 0.25);
+}
+
+ul.feed li.active i,
+ul.feed li.active span {
+  color: #fff;
+}
+
+ul.feed li:hover {
+  color: #fff;
+  background: linear-gradient(65deg, #5e52f6 0, #8b82f9 100%);
+  box-shadow: 0 8px 16px rgba(94, 82, 246, 0.25);
+}
+
+ul.feed li:hover i,
+ul.feed li:hover span {
+  color: #fff;
+}
+
+ul.feed li span {
+  text-indent: 15px;
+  display: block;
+  line-height: 32px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #5b6f82;
+}
+
+ul.feed li i {
+  color: #756af8;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  text-align: center;
+  display: block;
+  float: left;
+  line-height: 34px;
+  margin-left: 5px;
+}
+
+@media (max-width: 767px) {
+  ul.feed li {
+    width: 100%;
+  }
+}

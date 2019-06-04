@@ -15,6 +15,7 @@ import icon1 from '../assets/images/icon1.svg';
 import icon2 from '../assets/images/icon2.svg';
 import icon3 from '../assets/images/icon3.svg';
 import icon4 from '../assets/images/icon4.svg';
+import Listing from '../components/Listing';
 const IndexPage = () => (
   <Layout>
     <div className="body-wrap boxed-container">
@@ -64,7 +65,9 @@ const IndexPage = () => (
                   <img src={strip2} alt="" />
                 </div>
                 <div className="hero-browser-inner is-revealing">
-                  <div className="content">sdf</div>
+                  <div className="content">
+                    <Listing />
+                  </div>
                   {/* <img src={window} alt="" /> */}
                 </div>
                 <div className="bubble-1 is-revealing">
