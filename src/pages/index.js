@@ -16,20 +16,21 @@ import icon2 from '../assets/images/icon2.svg';
 import icon3 from '../assets/images/icon3.svg';
 import icon4 from '../assets/images/icon4.svg';
 import Listing from '../components/Listing';
+
 const IndexPage = () => (
   <Layout>
     <div className="body-wrap boxed-container">
       <Header />
       <main>
-        <section className="hero text-center">
+        <section className="hero text-center full-container">
           <div className="container-sm">
             <div className="hero-inner">
-              {/* <h1 className="hero-title h2-mobile mt-0 is-revealing">
+              <h1 className="hero-title h2-mobile mt-0 is-revealing">
                 Monoglot
               </h1>
               <p className="hero-paragraph is-revealing">
                 Speaking only one language - Engineering
-              </p> */}
+              </p>
               <div className="search-box ">
                 <div className="search-container">
                   <span className="search-icon">
