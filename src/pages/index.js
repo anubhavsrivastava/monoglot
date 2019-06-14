@@ -82,7 +82,7 @@ const IndexPage = () => (
           </div>
         </section>
 
-        <section className="features section text-center">
+        {/* <section className="features section text-center">
           <div className="container">
             <div className="features-inner section-inner has-bottom-divider">
               <div className="features-wrap">
@@ -139,7 +139,7 @@ const IndexPage = () => (
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="newsletter section">
           <div className="container-sm">
