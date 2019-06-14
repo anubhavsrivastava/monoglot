@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
-import Revealer from '../components/ScrollReveal';
+// import Revealer from '../components/ScrollReveal';
 import '../assets/sass/style.scss';
 
 class Layout extends Component {
@@ -50,7 +50,7 @@ class Layout extends Component {
             >
               <html lang="en" />
             </Helmet>
-            <Revealer />
+            {/* <Revealer /> */}
             <div className={isPreloaded ? 'main-body is-preload' : 'main-body'}>
               {children}
             </div>
