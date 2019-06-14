@@ -26,18 +26,29 @@ export default class Listing extends Component {
     const groups = Object.keys(listItems);
     return (
       <div className="list">
-        <ul className="feed">
-          {groups.map(g => {
-            return listItems[g].length ? (
-              <div className="content-list" key={g}>
-                <div style={{ width: '100%' }}>{g.toUpperCase()}</div>
+        {groups.map(g => {
+          return listItems[g].length ? (
+            <div className="content-list" key={g}>
+              <div style={{ width: '100%' }}>{g.toUpperCase()}</div>
+              <ul className="feed">
                 {listItems[g].map(o => {
-                  return <li key={o.title}>{o.title}</li>;
+                  return (
+                    <li key={o.title}>
+                      <a
+                        className="no-link"
+                        href={o.url}
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        {o.title}
+                      </a>
+                    </li>
+                  );
                 })}
-              </div>
-            ) : null;
-          })}
-        </ul>
+              </ul>
+            </div>
+          ) : null;
+        })}
       </div>
     );
   }
