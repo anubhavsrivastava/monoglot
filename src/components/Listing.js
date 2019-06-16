@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
-import orgs from '../data/org.json';
 
 const alphabets26 = '#abcdefghijklmnopqrstuvwxyz';
 
 export default class Listing extends Component {
-  alphabeticalOrgs = () => {
+  alphabeticalOrgs = entries => {
     const sortedOrgs = alphabets26.split('').reduce((t, alphabet) => {
       t[alphabet] = [];
       return t;
     }, {});
-    orgs.org.forEach(entry => {
+    entries.forEach(entry => {
       const candidate = entry.title.toLowerCase()[0];
       if (sortedOrgs[candidate]) {
         sortedOrgs[candidate].push(entry);
@@ -22,7 +21,7 @@ export default class Listing extends Component {
   };
 
   render() {
-    const listItems = this.alphabeticalOrgs();
+    const listItems = this.alphabeticalOrgs(this.props.entries);
     const groups = Object.keys(listItems);
     return (
       <div className="list">

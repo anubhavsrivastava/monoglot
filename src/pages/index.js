@@ -1,15 +1,16 @@
 import React from 'react';
 // import Scrollspy from 'react-scrollspy';
-
+import orgs from '../data/org.json';
+import individual from '../data/individual.json';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 // import Scroll from '../components/Scroll';
 
-import strip1 from '../assets/images/strip1.svg';
-import strip2 from '../assets/images/strip2.svg';
-import strip3 from '../assets/images/strip3.svg';
-import strip4 from '../assets/images/strip4.svg';
+import strip1 from '../assets/images/strip11.svg';
+import strip2 from '../assets/images/strip13.svg';
+import strip3 from '../assets/images/strip12.svg';
+import strip4 from '../assets/images/strip14.svg';
 import window from '../assets/images/window.svg';
 import icon1 from '../assets/images/icon1.svg';
 import icon2 from '../assets/images/icon2.svg';
@@ -67,7 +68,7 @@ const IndexPage = () => (
                 </div>
                 <div className="hero-browser-inner is-revealing">
                   <div className="content">
-                    <Listing />
+                    <Listing entries={individual.entries} />
                   </div>
                   {/* <img src={window} alt="" /> */}
                 </div>
