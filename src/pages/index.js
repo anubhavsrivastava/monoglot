@@ -17,6 +17,7 @@ import icon2 from '../assets/images/icon2.svg';
 import icon3 from '../assets/images/icon3.svg';
 import icon4 from '../assets/images/icon4.svg';
 import Listing from '../components/Listing';
+import Toggle from '../components/Toggle.js';
 
 const IndexPage = () => (
   <Layout>
@@ -40,25 +41,12 @@ const IndexPage = () => (
                   <input type="search" id="search" placeholder="Search" />
                 </div>
               </div>
-              {/* <div className="hero-form newsletter-form field field-grouped is-revealing">
-                <div className="control control-expanded">
-                  <input
-                    className="input"
-                    type="email"
-                    name="email"
-                    placeholder="Your best email&hellip;"
-                  />
-                </div>
-                <div className="control">
-                  <a
-                    className="button button-primary button-block button-shadow"
-                    href="/"
-                  >
-                    Get early access
-                  </a>
-                </div>
-              </div>
-               */}
+              <Toggle
+                options={[
+                  { name: 'Organisation', value: 'org' },
+                  { name: 'Individual', value: 'ind' },
+                ]}
+              />
               <div className="hero-browser">
                 <div className="bubble-3 is-revealing">
                   <img src={strip1} alt="" />
