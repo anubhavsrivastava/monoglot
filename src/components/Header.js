@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/img/website-icon.png';
+import logo from '../assets/img/website-icon.svg';
 export default function Header() {
   return (
     <header className="site-header">

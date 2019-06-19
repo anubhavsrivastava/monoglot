@@ -1,6 +1,6 @@
 import React from 'react';
 import config from '../../config';
-import logo from '../assets/img/website-icon.png';
+import logo from '../assets/img/website-icon.svg';
 
 export default function Footer() {
   return (
