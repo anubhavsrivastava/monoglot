@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 
 const alphabets26 = '#abcdefghijklmnopqrstuvwxyz';
-
+const hash = {};
 export default class Listing extends Component {
-  alphabeticalOrgs = entries => {
+  alphabeticalOrgs = (name, entries) => {
+    if (hash[name]) {
+      return hash[name];
+    }
     const sortedOrgs = alphabets26.split('').reduce((t, alphabet) => {
       t[alphabet] = [];
       return t;
     }, {});
+
     entries.forEach(entry => {
       const candidate = entry.title.toLowerCase()[0];
       if (sortedOrgs[candidate]) {
@@ -17,11 +21,13 @@ export default class Listing extends Component {
       }
     });
 
+    hash[name] = sortedOrgs;
     return sortedOrgs;
   };
 
   render() {
-    const listItems = this.alphabeticalOrgs(this.props.entries);
+    const { name, entries } = this.props;
+    const listItems = this.alphabeticalOrgs(name, entries);
     const groups = Object.keys(listItems);
     return (
       <div className="list">
