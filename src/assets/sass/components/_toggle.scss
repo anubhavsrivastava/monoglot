@@ -71,3 +71,11 @@
   transition: transform 0s linear 0.25s;
   transform-style: preserve-3d;
 }
+
+.main-toggle.rotate-toggle {
+  transform: rotateY(10deg);
+}
+
+.main-toggle.anti-rotate-toggle {
+  transform: rotateY(-10deg);
+}
