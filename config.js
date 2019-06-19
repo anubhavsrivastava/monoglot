@@ -6,7 +6,7 @@ module.exports = {
   manifestBackgroundColor: '#6c63ff',
   manifestThemeColor: '#6c63ff',
   manifestDisplay: 'standalone',
-  manifestIcon: 'src/assets/img/website-icon.png',
+  manifestIcon: 'src/assets/img/website-icon.svg',
   pathPrefix: `/monoglot/`, // This path is subpath of your hosting https://domain/portfolio
   // social
   socialLinks: [
