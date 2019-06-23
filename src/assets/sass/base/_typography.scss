@@ -38,9 +38,10 @@ h6,
 .h6 {
   clear: both;
   color: color(typography, 1);
-  @if (get-font-family(heading) != get-font-family(base)) {
-    @include font-family(heading);
-  }
+  @include font-family(base);
+  // @if (get-font-family(heading) != get-font-family(base)) {
+  //   @include font-family(heading);
+  // }
   @include font-weight(medium);
 }
 
