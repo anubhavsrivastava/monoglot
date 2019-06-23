@@ -18,6 +18,7 @@ import strip4 from '../assets/images/strip14.svg';
 // import icon4 from '../assets/images/icon4.svg';
 import Listing from '../components/Listing';
 import Toggle from '../components/Toggle.js';
+import ScrollToTop from '../components/ScrollToTop/index.js';
 
 export default class IndexPage extends Component {
   constructor(props) {
@@ -41,15 +42,17 @@ export default class IndexPage extends Component {
       <Layout>
         <div className="body-wrap boxed-container">
           <Header />
+          <ScrollToTop />
           <main>
             <section className="hero text-center full-container">
               <div className="container-sm">
                 <div className="hero-inner">
                   <h1 className="hero-title h2-mobile mt-0 is-revealing">
-                    Monoglot
+                    Software Engineering Blogs
                   </h1>
                   <p className="hero-paragraph is-revealing">
-                    Speaking only one language - Engineering
+                    List of sites for blogs {'&'} articles by various
+                    organization and individuals
                   </p>
                   <div className="search-box ">
                     <div className="search-container">
