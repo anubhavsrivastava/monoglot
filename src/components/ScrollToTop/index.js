@@ -9,7 +9,7 @@ export default class ScrollToTop extends Component {
     };
   }
 
-  HandleScroll = () => {
+  handleScroll = () => {
     const { visibilityClass } = this.state;
     if (window.pageYOffset > 300) {
       if (visibilityClass !== 'show') {
@@ -23,10 +23,10 @@ export default class ScrollToTop extends Component {
   };
 
   componentDidMount() {
-    window.addEventListener('scroll', this.HandleScroll);
+    window.addEventListener('scroll', this.handleScroll);
   }
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.HandleScroll);
+    window.removeEventListener('scroll', this.handleScroll);
   }
 
   render() {
