@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Scroll from './Scroll';
+import Fade from 'react-reveal/Fade';
 
 const alphabets26 = '#abcdefghijklmnopqrstuvwxyz';
 const hash = {};
@@ -69,16 +70,18 @@ export default class Listing extends Component {
               <ul className="feed">
                 {listItems[g].map(o => {
                   return (
-                    <li key={o.title}>
-                      <a
-                        className="no-link"
-                        href={o.url}
-                        rel="noopener noreferrer"
-                        target="_blank"
-                      >
-                        {o.title}
-                      </a>
-                    </li>
+                    <Fade duration={1000} top>
+                      <li key={o.title}>
+                        <a
+                          className="no-link"
+                          href={o.url}
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          {o.title}
+                        </a>
+                      </li>
+                    </Fade>
                   );
                 })}
               </ul>
