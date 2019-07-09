@@ -67,6 +67,10 @@ ul.feed li i {
   float: left;
   line-height: 34px;
   margin-left: 5px;
+
+  &.right {
+    float: right;
+  }
 }
 
 @media (max-width: 767px) {

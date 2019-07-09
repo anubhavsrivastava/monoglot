@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Scroll from './Scroll';
 import Fade from 'react-reveal/Fade';
-
+import copy from 'copy-text-to-clipboard';
 const alphabets26 = '#abcdefghijklmnopqrstuvwxyz';
 const hash = {};
 
@@ -80,6 +80,11 @@ export default class Listing extends Component {
                         >
                           {o.title}
                         </a>
+                        <i
+                          onClick={_ => copy(o.feed)}
+                          class="right fa fa-rss"
+                          aria-hidden="true"
+                        />
                       </li>
                     </Fade>
                   );
