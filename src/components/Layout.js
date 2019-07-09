@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 // import Revealer from '../components/ScrollReveal';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/sass/style.scss';
-
 class Layout extends Component {
   constructor(props) {
     super(props);
