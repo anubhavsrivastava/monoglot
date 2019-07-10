@@ -53,6 +53,10 @@
   white-space: nowrap;
   padding: 0 5px;
   text-decoration: none;
+
+  &:hover {
+    font-size: 32px;
+  }
 }
 
 // @media (max-width: 800px) {
