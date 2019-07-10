@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Scroll from './Scroll';
 import Fade from 'react-reveal/Fade';
 import copy from 'copy-text-to-clipboard';
+import { toast } from 'react-toastify';
 const alphabets26 = '#abcdefghijklmnopqrstuvwxyz';
 const hash = {};
 
@@ -28,6 +29,11 @@ class ListIndex extends Component {
   }
 }
 export default class Listing extends Component {
+  notify = () =>
+    toast.info('📋 RSS link copied to clipboard', {
+      className: 'toast--info',
+    });
+
   alphabeticalOrgs = (name, entries) => {
     if (hash[name]) {
       return hash[name];
@@ -79,7 +85,12 @@ export default class Listing extends Component {
                       >
                         {o.title}
                         <i
-                          onClick={_ => copy(o.feed)}
+                          onClick={e => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            copy(o.feed);
+                            this.notify();
+                          }}
                           className="hovered right fa fa-rss"
                           aria-hidden="true"
                         />

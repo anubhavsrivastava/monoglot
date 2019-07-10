@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
+import { Slide, ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 // import Revealer from '../components/ScrollReveal';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/sass/style.scss';
@@ -50,6 +52,16 @@ class Layout extends Component {
             >
               <html lang="en" />
             </Helmet>
+            <ToastContainer
+              position={toast.POSITION.BOTTOM_CENTER}
+              autoClose={3000}
+              hideProgressBar
+              newestOnTop={false}
+              rtl={false}
+              pauseOnVisibilityChange
+              pauseOnHover
+              transition={Slide}
+            />
             {/* <Revealer /> */}
             <div className={isPreloaded ? 'main-body is-preload' : 'main-body'}>
               {children}
