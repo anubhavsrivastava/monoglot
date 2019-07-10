@@ -41,6 +41,9 @@ ul.feed li:hover {
   color: #fff;
   background: linear-gradient(65deg, #5e52f6 0, #8b82f9 100%);
   box-shadow: 0 8px 16px rgba(94, 82, 246, 0.25);
+  a {
+    color: #fff;
+  }
 }
 
 ul.feed li:hover i,
