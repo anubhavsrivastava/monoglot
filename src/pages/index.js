@@ -54,7 +54,7 @@ export default class IndexPage extends Component {
                     List of sites for blogs {'&'} articles by various
                     organization and individuals
                   </p>
-                  <div className="search-box ">
+                  {/* <div className="search-box ">
                     <div className="search-container">
                       <span className="search-icon">
                         <i className="fa fa-search" />
@@ -66,7 +66,7 @@ export default class IndexPage extends Component {
                         placeholder="Search"
                       />
                     </div>
-                  </div>
+                  </div> */}
                   <Toggle
                     onToggle={name => this.onSourceChange(name)}
                     options={[
