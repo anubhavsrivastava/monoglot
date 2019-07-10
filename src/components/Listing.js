@@ -70,10 +70,9 @@ export default class Listing extends Component {
               <div className="feed">
                 {listItems[g].map(o => {
                   return (
-                    <Fade duration={1000} top>
+                    <Fade duration={500} top key={o.title}>
                       <a
                         className="feed-item no-link"
-                        key={o.title}
                         href={o.url}
                         rel="noopener noreferrer"
                         target="_blank"
@@ -81,7 +80,7 @@ export default class Listing extends Component {
                         {o.title}
                         <i
                           onClick={_ => copy(o.feed)}
-                          class="hovered right fa fa-rss"
+                          className="hovered right fa fa-rss"
                           aria-hidden="true"
                         />
                       </a>
