@@ -1,10 +1,10 @@
-ul.feed {
+div.feed {
   list-style: none;
 }
 .list {
   margin-top: 30px;
 }
-ul.feed li {
+div.feed .feed-item {
   cursor: pointer;
   padding: 10px;
   width: 350px;
@@ -25,19 +25,19 @@ ul.feed li {
   transition: all 0.1s linear;
 }
 
-ul.feed li.active:hover,
-ul.feed li.active {
+div.feed .feed-item.active:hover,
+div.feed .feed-item.active {
   color: #fff !important;
   background: #756af8;
   box-shadow: 0 8px 16px rgba(94, 82, 246, 0.25);
 }
 
-ul.feed li.active i,
-ul.feed li.active span {
+div.feed .feed-item.active i,
+div.feed .feed-item.active span {
   color: #fff;
 }
 
-ul.feed li:hover {
+div.feed .feed-item:hover {
   color: #fff;
   background: linear-gradient(65deg, #5e52f6 0, #8b82f9 100%);
   box-shadow: 0 8px 16px rgba(94, 82, 246, 0.25);
@@ -46,12 +46,13 @@ ul.feed li:hover {
   }
 }
 
-ul.feed li:hover i,
-ul.feed li:hover span {
+div.feed .feed-item:hover i,
+div.feed .feed-item:hover span {
+  opacity: 1 !important;
   color: #fff;
 }
 
-ul.feed li span {
+div.feed .feed-item span {
   text-indent: 15px;
   display: block;
   line-height: 32px;
@@ -60,7 +61,7 @@ ul.feed li span {
   color: #5b6f82;
 }
 
-ul.feed li i {
+div.feed .feed-item i {
   color: #756af8;
   width: 30px;
   height: 30px;
@@ -74,10 +75,14 @@ ul.feed li i {
   &.right {
     float: right;
   }
+
+  &.hovered {
+    opacity: 0;
+  }
 }
 
 @media (max-width: 767px) {
-  ul.feed li {
+  div.feed .feed-item {
     width: 100%;
   }
 }

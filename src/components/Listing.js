@@ -67,29 +67,28 @@ export default class Listing extends Component {
               >
                 {g.toUpperCase()}
               </div>
-              <ul className="feed">
+              <div className="feed">
                 {listItems[g].map(o => {
                   return (
                     <Fade duration={1000} top>
-                      <li key={o.title}>
-                        <a
-                          className="no-link"
-                          href={o.url}
-                          rel="noopener noreferrer"
-                          target="_blank"
-                        >
-                          {o.title}
-                        </a>
+                      <a
+                        className="feed-item no-link"
+                        key={o.title}
+                        href={o.url}
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        {o.title}
                         <i
                           onClick={_ => copy(o.feed)}
-                          class="right fa fa-rss"
+                          class="hovered right fa fa-rss"
                           aria-hidden="true"
                         />
-                      </li>
+                      </a>
                     </Fade>
                   );
                 })}
-              </ul>
+              </div>
             </div>
           );
         })}
