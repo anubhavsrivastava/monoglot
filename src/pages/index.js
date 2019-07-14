@@ -40,7 +40,7 @@ export default class IndexPage extends Component {
     const { source, sourceName } = this.state;
     return (
       <Layout>
-        <div className="body-wrap boxed-container">
+        <div className="body-wrap boxed-container background-box">
           <Header />
           <ScrollToTop />
           <main>
