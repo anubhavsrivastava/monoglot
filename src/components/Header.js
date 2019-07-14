@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../assets/img/website-icon.svg';
 export default function Header() {
   return (
-    <header className="site-header">
+    <header className="site-header fixed-top">
       <div className="container">
         <div className="site-header-inner">
           <div className="brand header-brand">
