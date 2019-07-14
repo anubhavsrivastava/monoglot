@@ -12,7 +12,7 @@ export default function Footer() {
               <img src={logo} style={{ height: '32px' }} alt="logo" />
             </a>
           </div>
-          <ul className="footer-links list-reset">
+          {/* <ul className="footer-links list-reset">
             <li>
               <a href="/">Contact</a>
             </li>
@@ -25,7 +25,7 @@ export default function Footer() {
             <li>
               <a href="/">Support</a>
             </li>
-          </ul>
+          </ul> */}
           <ul className="footer-social-links list-reset icons">
             {config.socialLinks.map(social => {
               const { icon, name, url } = social;
