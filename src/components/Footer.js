@@ -38,9 +38,9 @@ export default function Footer() {
               );
             })}
           </ul>
-          <div className="footer-copyright">
+          {/* <div className="footer-copyright">
             &copy; {new Date().getFullYear()} Monoglot
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
